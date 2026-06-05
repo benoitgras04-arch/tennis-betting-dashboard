@@ -1,0 +1,7 @@
+Date,Joueur_parie,Adversaire,Tournoi,Circuit,Surface,Round,Condition,Points,Proba_IA,Cote,Bookmaker,Value,Mise_pct,Mode,Resultat
+2026-05-29,Carreno-Busta P.,Tirante T. A.,INTERNATIONAUX-DE-FRANCE,ATP,Clay,R32,Outdoor,2000,89.5%,2.95,Winamax,0.51,3.00%,PARI_REEL,GAGNE
+2026-05-30,Tien L.,Cobolli F.,INTERNATIONAUX-DE-FRANCE,ATP,Clay,R32,Outdoor,2000,76.7%,2.55,Betclic,0.211,3.00%,PARI_REEL,PERDU
+2026-05-30,Landaluce M.,Cerundolo J. M.,INTERNATIONAUX-DE-FRANCE,ATP,Clay,R32,Outdoor,2000,84.2%,2.15,Winamax,0.29,3.00%,PARI_REEL,PERDU
+2026-06-01,Berrettini M.,Cerundolo J. M.,INTERNATIONAUX-DE-FRANCE,ATP,Clay,R16,Outdoor,2000,89.2%,1.64,Winamax,0.253,3.00%,PARI_REEL,GAGNE
+2026-06-01,Tiafoe F.,Arnaldi M.,INTERNATIONAUX-DE-FRANCE,ATP,Clay,R16,Outdoor,2000,71.0%,1.9,Winamax,0.113,3.00%,PARI_REEL,PERDU
+2026-06-02,Mensik J.,Fonseca J.,INTERNATIONAUX-DE-FRANCE,ATP,Clay,QF,Outdoor,2000,70.5%,2.8,Unibet,0.176,3.00%,PARI_REEL,GAGNE

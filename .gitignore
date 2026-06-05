@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# Streamlit secrets (ne JAMAIS commiter)
+.streamlit/secrets.toml
+
+# Backups
+*.bak
+*.bak_*
+
+# Fichiers temporaires
+*.log
