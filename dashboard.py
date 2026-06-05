@@ -342,7 +342,11 @@ with tab1:
     st.markdown("---")
 
     # --- PARIS EN ATTENTE : ATP / WTA en colonnes ---
-    df_attente = df[df['Resultat'] == 'EN_ATTENTE'].copy()
+    # Uniquement les PARI_REEL (mise réelle d'argent)
+    df_attente = df[
+        (df['Resultat'] == 'EN_ATTENTE') & 
+        (df['Mode'] == 'PARI_REEL')
+    ].copy()
 
     st.markdown("## 📅 Paris en attente")
 
@@ -355,10 +359,9 @@ with tab1:
             lambda r: kpis_global['bankroll'] * r['Mise_num'] / 100, axis=1
         ).sum() if len(df_attente_reels) > 0 else 0
 
-        col_info1, col_info2, col_info3 = st.columns(3)
-        col_info1.metric("Paris réels", len(df_attente[df_attente['Mode'] == 'PARI_REEL']))
-        col_info2.metric("Observations", len(df_attente[df_attente['Mode'] == 'OBSERVATION']))
-        col_info3.metric("💵 Mises engagées", f"{mises_engagees:,.2f} €")
+        col_info1, col_info2 = st.columns(2)
+        col_info1.metric("Paris réels", len(df_attente))
+        col_info2.metric("💵 Mises engagées", f"{mises_engagees:,.2f} €")
 
         # Séparation ATP / WTA
         col_atp, col_wta = st.columns(2)
@@ -375,8 +378,8 @@ with tab1:
                         st.markdown(
                             f"**{r['Joueur_parie']}** vs {r['Adversaire']}  \n"
                             f"📍 {r['Tournoi']} ({r['Surface']}) — Round {r.get('Round', '?')}  \n"
-                            f"🎲 Cote **{r['Cote']}** @ {r['Bookmaker']} | "
-                            f"Mise : **{r['Mise_pct']}** | Edge : {r['Value']}  \n"
+                            f"🎯 Proba IA : **{r['Proba_IA']}** | 🎲 Cote {r['Cote']} @ {r['Bookmaker']}  \n"
+                            f"💵 Mise : **{r['Mise_pct']}** | Edge : {r['Value']}  \n"
                             f"{badge}"
                         )
                         st.markdown("")
@@ -393,11 +396,88 @@ with tab1:
                         st.markdown(
                             f"**{r['Joueur_parie']}** vs {r['Adversaire']}  \n"
                             f"📍 {r['Tournoi']} ({r['Surface']}) — Round {r.get('Round', '?')}  \n"
-                            f"🎲 Cote **{r['Cote']}** @ {r['Bookmaker']} | "
-                            f"Mise : **{r['Mise_pct']}** | Edge : {r['Value']}  \n"
+                            f"🎯 Proba IA : **{r['Proba_IA']}** | 🎲 Cote {r['Cote']} @ {r['Bookmaker']}  \n"
+                            f"💵 Mise : **{r['Mise_pct']}** | Edge : {r['Value']}  \n"
                             f"{badge}"
                         )
                         st.markdown("")
+
+    st.markdown("---")
+
+    # --- AVIS DU JOUR : OBSERVATIONS + AVIS LIBRES (tout ce qui n'est pas pari réel) ---
+    df_avis = df[
+        (df['Resultat'] == 'EN_ATTENTE') & 
+        (df['Mode'].isin(['OBSERVATION', 'AVIS_LIBRE']))
+    ].copy()
+
+    st.markdown("## 🔮 Mes avis du jour")
+    st.caption(
+        "Tous les matchs analysés par l'IA. "
+        "Aucune mise réelle, juste mon pronostic du favori avec sa probabilité. "
+        "Utile pour suivre les matchs qui n'ont pas passé mes filtres de pari."
+    )
+
+    if len(df_avis) == 0:
+        st.info("ℹ️ Aucun avis du jour pour le moment.")
+    else:
+        col_avis_atp, col_avis_wta = st.columns(2)
+
+        with col_avis_atp:
+            st.markdown("### 🎾 ATP")
+            df_avis_atp = df_avis[df_avis['Circuit'] == 'ATP']
+            if len(df_avis_atp) == 0:
+                st.caption("Aucun avis ATP.")
+            else:
+                for _, r in df_avis_atp.iterrows():
+                    # Couleur selon la confiance (proba)
+                    proba = r['Proba_num']
+                    if proba >= 0.70:
+                        emoji_conf = "🟢"
+                        niveau = "Forte confiance"
+                    elif proba >= 0.60:
+                        emoji_conf = "🟡"
+                        niveau = "Confiance modérée"
+                    else:
+                        emoji_conf = "⚪"
+                        niveau = "Confiance limitée"
+                    
+                    type_avis = "⚪ Observation (filtre WTA)" if r['Mode'] == 'OBSERVATION' else "🔮 Avis libre"
+                    st.markdown(
+                        f"{emoji_conf} **{r['Joueur_parie']}** vs {r['Adversaire']}  \n"
+                        f"📍 {r['Tournoi']} ({r['Surface']}) — Round {r.get('Round', '?')}  \n"
+                        f"🎯 Proba IA : **{r['Proba_IA']}** ({niveau})  \n"
+                        f"💰 Cote disponible : {r['Cote']} @ {r['Bookmaker']}  \n"
+                        f"{type_avis}"
+                    )
+                    st.markdown("")
+
+        with col_avis_wta:
+            st.markdown("### 🎾 WTA")
+            df_avis_wta = df_avis[df_avis['Circuit'] == 'WTA']
+            if len(df_avis_wta) == 0:
+                st.caption("Aucun avis WTA.")
+            else:
+                for _, r in df_avis_wta.iterrows():
+                    proba = r['Proba_num']
+                    if proba >= 0.70:
+                        emoji_conf = "🟢"
+                        niveau = "Forte confiance"
+                    elif proba >= 0.60:
+                        emoji_conf = "🟡"
+                        niveau = "Confiance modérée"
+                    else:
+                        emoji_conf = "⚪"
+                        niveau = "Confiance limitée"
+                    
+                    type_avis = "⚪ Observation (filtre WTA)" if r['Mode'] == 'OBSERVATION' else "🔮 Avis libre"
+                    st.markdown(
+                        f"{emoji_conf} **{r['Joueur_parie']}** vs {r['Adversaire']}  \n"
+                        f"📍 {r['Tournoi']} ({r['Surface']}) — Round {r.get('Round', '?')}  \n"
+                        f"🎯 Proba IA : **{r['Proba_IA']}** ({niveau})  \n"
+                        f"💰 Cote disponible : {r['Cote']} @ {r['Bookmaker']}  \n"
+                        f"{type_avis}"
+                    )
+                    st.markdown("")
 
     st.markdown("---")
 
