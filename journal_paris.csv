@@ -33,9 +33,6 @@ Date,Joueur_parie,Adversaire,Tournoi,Circuit,Surface,Round,Condition,Points,Prob
 2026-06-09,Griekspoor T.,Van De Zandschulp B.,S-HERTOGENBOSCH,ATP,Grass,R32,Outdoor,250,60.4%,1.55,Betclic,0.03,0.00%,AVIS_LIBRE,EN_ATTENTE
 2026-06-09,Brooksby J.,Zhang Z.,S-HERTOGENBOSCH,ATP,Grass,R32,Outdoor,250,60.5%,1.69,Unibet,-0.136,0.00%,AVIS_LIBRE,PERDU
 2026-06-09,Hurkacz H.,Fucsovics M.,S-HERTOGENBOSCH,ATP,Grass,R32,Outdoor,250,72.6%,1.37,Betclic,0.095,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-09,Bergs Z.,McCabe J.,S-HERTOGENBOSCH,ATP,Grass,R32,Outdoor,250,69.3%,1.44,Betclic,0.035,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-09,Majchrzak K.,Virtanen O.,S-HERTOGENBOSCH,ATP,Grass,R32,Outdoor,250,54.7%,1.92,Betclic,-0.008,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-09,Wu Y.,Boogaard T.,S-HERTOGENBOSCH,ATP,Grass,R32,Outdoor,250,80.3%,1.23,Unibet,0.289,0.00%,AVIS_LIBRE,EN_ATTENTE
 2026-06-09,Cirstea S.,Inglis M.,LONDON,WTA,Grass,R32,Outdoor,500,80.4%,1.21,Betclic,0.069,0.00%,AVIS_LIBRE,GAGNE
 2026-06-09,Jovic I.,Ruzic A.,LONDON,WTA,Grass,R32,Outdoor,500,76.0%,1.26,Betclic,0.177,0.00%,AVIS_LIBRE,GAGNE
 2026-06-09,Raducanu E.,Blinkova A.,LONDON,WTA,Grass,R32,Outdoor,500,65.9%,1.51,Betclic,0.018,0.00%,AVIS_LIBRE,GAGNE
@@ -50,10 +47,7 @@ Date,Joueur_parie,Adversaire,Tournoi,Circuit,Surface,Round,Condition,Points,Prob
 2026-06-09,Bartunkova N.,Vandewinkel H.,S-HERTOGENBOSCH,WTA,Grass,R32,Outdoor,250,55.8%,1.71,Betclic,-0.031,0.00%,AVIS_LIBRE,EN_ATTENTE
 2026-06-09,Ruse G.,Korpatsch T.,S-HERTOGENBOSCH,WTA,Grass,R32,Outdoor,250,77.0%,1.27,Betclic,0.224,0.00%,AVIS_LIBRE,GAGNE
 2026-06-09,Krejcikova B.,Zarazua R.,S-HERTOGENBOSCH,WTA,Grass,R32,Outdoor,250,81.8%,1.15,Betclic,0.07,0.00%,AVIS_LIBRE,GAGNE
-2026-06-09,Bouzas Maneiro J.,Tomljanovic A.,S-HERTOGENBOSCH,WTA,Grass,R32,Outdoor,250,54.1%,1.83,Betclic,0.005,0.00%,AVIS_LIBRE,EN_ATTENTE
 2026-06-09,Navarro E.,McNally C.,S-HERTOGENBOSCH,WTA,Grass,R32,Outdoor,250,62.2%,1.67,Betclic,-0.035,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-09,Sierra S.,Boisson L.,S-HERTOGENBOSCH,WTA,Grass,R32,Outdoor,250,65.8%,1.5,Betclic,0.128,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-09,Potapova A.,Lamens S.,S-HERTOGENBOSCH,WTA,Grass,R32,Outdoor,250,81.2%,1.19,Betclic,0.105,0.00%,AVIS_LIBRE,EN_ATTENTE
 2026-06-09,Giron M.,Bautista R.,STUTTGART,ATP,Grass,R32,Outdoor,250,62.3%,1.68,Betclic,-0.182,0.00%,AVIS_LIBRE,GAGNE
 2026-06-09,Halys Q.,Shimabukuro S.,STUTTGART,ATP,Grass,R32,Outdoor,250,54.6%,1.68,Betclic,0.043,0.00%,AVIS_LIBRE,PERDU
 2026-06-09,Hanfmann Y.,Kovacevic A.,STUTTGART,ATP,Grass,R32,Outdoor,250,61.8%,1.56,Betclic,-0.026,0.00%,AVIS_LIBRE,GAGNE
@@ -62,33 +56,21 @@ Date,Joueur_parie,Adversaire,Tournoi,Circuit,Surface,Round,Condition,Points,Prob
 2026-06-09,Tiafoe F.,Altmaier D.,STUTTGART,ATP,Grass,R32,Outdoor,250,78.0%,1.28,Betclic,0.049,0.00%,AVIS_LIBRE,GAGNE
 2026-06-09,Duckworth J.,Dedura D.,STUTTGART,ATP,Grass,R32,Outdoor,250,71.9%,1.37,Betclic,0.033,0.00%,AVIS_LIBRE,GAGNE
 2026-06-09,Moutet C.,Kyrgios N.,STUTTGART,ATP,Grass,R32,Outdoor,250,68.2%,1.5,Winamax,0.311,0.00%,AVIS_LIBRE,PERDU
-2026-06-09,De Minaur A.,Damm M.,S-HERTOGENBOSCH,ATP,Grass,Inconnu,Outdoor,250,75.9%,1.24,Betclic,-0.046,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-09,Humbert U.,Bonzi B.,S-HERTOGENBOSCH,ATP,Grass,Inconnu,Outdoor,250,70.6%,1.44,Betclic,0.102,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-09,Jovic I.,Eala A.,LONDON,WTA,Grass,Inconnu,Outdoor,500,56.7%,1.49,Betclic,0.093,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-09,Anisimova A.,Siegemund L.,LONDON,WTA,Grass,Inconnu,Outdoor,500,67.3%,1.39,Betclic,-0.120,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-09,Mboko V.,Pliskova Ka.,LONDON,WTA,Grass,Inconnu,Outdoor,500,62.7%,1.55,Betclic,0.096,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-09,Bouzkova M.,Vekic D.,LONDON,WTA,Grass,Inconnu,Outdoor,500,59.3%,1.56,Betclic,0.060,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-09,Snigur D.,Udvardy P.,S-HERTOGENBOSCH,WTA,Grass,Inconnu,Outdoor,250,74.1%,1.34,Unibet,0.170,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-09,Minnen G.,Montgomery R.,S-HERTOGENBOSCH,WTA,Grass,Inconnu,Outdoor,250,60.3%,1.58,Betclic,0.072,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-09,Hanfmann Y.,Bellucci M.,STUTTGART,ATP,Grass,Inconnu,Outdoor,250,53.5%,1.71,Betclic,-0.033,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-09,Mpetshi Perricard G.,Onclin G.,STUTTGART,ATP,Grass,Inconnu,Outdoor,250,62.5%,1.53,Betclic,-0.043,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-09,Bublik A.,Struff J-L.,STUTTGART,ATP,Grass,Inconnu,Outdoor,250,61.2%,1.42,Betclic,-0.204,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-09,Fritz T.,Landaluce M.,STUTTGART,ATP,Grass,Inconnu,Outdoor,250,73.5%,1.4,Unibet,-0.035,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,Wu Y.,Boogaard T.,S-HERTOGENBOSCH,ATP,Grass,Inconnu,Outdoor,250,82.2%,1.19,Unibet,0.309,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,Bergs Z.,McCabe J.,S-HERTOGENBOSCH,ATP,Grass,Inconnu,Outdoor,250,69.2%,1.45,Betclic,0.022,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,Virtanen O.,Majchrzak K.,S-HERTOGENBOSCH,ATP,Grass,Inconnu,Outdoor,250,53.7%,1.73,Unibet,0.063,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,De Minaur A.,Damm M.,S-HERTOGENBOSCH,ATP,Grass,Inconnu,Outdoor,250,75.9%,1.24,Betclic,-0.046,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,Humbert U.,Bonzi B.,S-HERTOGENBOSCH,ATP,Grass,Inconnu,Outdoor,250,70.6%,1.44,Betclic,0.102,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,Jovic I.,Eala A.,LONDON,WTA,Grass,Inconnu,Outdoor,500,56.7%,1.49,Betclic,0.093,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,Anisimova A.,Siegemund L.,LONDON,WTA,Grass,Inconnu,Outdoor,500,67.3%,1.39,Betclic,-0.120,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,Mboko V.,Pliskova Ka.,LONDON,WTA,Grass,Inconnu,Outdoor,500,62.7%,1.55,Betclic,0.096,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,Bouzkova M.,Vekic D.,LONDON,WTA,Grass,Inconnu,Outdoor,500,59.3%,1.56,Betclic,0.060,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,Sierra S.,Boisson L.,S-HERTOGENBOSCH,WTA,Grass,Inconnu,Outdoor,250,68.6%,1.46,Betclic,0.142,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,Potapova A.,Lamens S.,S-HERTOGENBOSCH,WTA,Grass,Inconnu,Outdoor,250,81.0%,1.2,Betclic,0.104,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,Bouzas Maneiro J.,Tomljanovic A.,S-HERTOGENBOSCH,WTA,Grass,Inconnu,Outdoor,250,54.4%,1.8,Winamax,0.008,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,Snigur D.,Udvardy P.,S-HERTOGENBOSCH,WTA,Grass,Inconnu,Outdoor,250,74.1%,1.34,Unibet,0.170,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,Minnen G.,Montgomery R.,S-HERTOGENBOSCH,WTA,Grass,Inconnu,Outdoor,250,60.3%,1.58,Betclic,0.072,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,Hanfmann Y.,Bellucci M.,STUTTGART,ATP,Grass,Inconnu,Outdoor,250,53.5%,1.71,Betclic,-0.033,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,Mpetshi Perricard G.,Onclin G.,STUTTGART,ATP,Grass,Inconnu,Outdoor,250,62.5%,1.53,Betclic,-0.043,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,Bublik A.,Struff J-L.,STUTTGART,ATP,Grass,Inconnu,Outdoor,250,61.2%,1.42,Betclic,-0.204,0.00%,AVIS_LIBRE,EN_ATTENTE
-2026-06-10,Fritz T.,Landaluce M.,STUTTGART,ATP,Grass,Inconnu,Outdoor,250,73.5%,1.4,Unibet,-0.035,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,Wu Y.,Boogaard T.,S-HERTOGENBOSCH,ATP,Grass,R32,Outdoor,250,82.2%,1.19,Unibet,0.309,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,Bergs Z.,McCabe J.,S-HERTOGENBOSCH,ATP,Grass,R32,Outdoor,250,69.2%,1.45,Betclic,0.022,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,Virtanen O.,Majchrzak K.,S-HERTOGENBOSCH,ATP,Grass,R32,Outdoor,250,53.7%,1.73,Unibet,0.063,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,De Minaur A.,Damm M.,S-HERTOGENBOSCH,ATP,Grass,R16,Outdoor,250,75.9%,1.24,Betclic,-0.046,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,Humbert U.,Bonzi B.,S-HERTOGENBOSCH,ATP,Grass,R16,Outdoor,250,70.6%,1.44,Betclic,0.102,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,Jovic I.,Eala A.,LONDON,WTA,Grass,R16,Outdoor,500,56.7%,1.49,Betclic,0.093,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,Anisimova A.,Siegemund L.,LONDON,WTA,Grass,R16,Outdoor,500,67.3%,1.39,Betclic,-0.120,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,Mboko V.,Pliskova Ka.,LONDON,WTA,Grass,R16,Outdoor,500,62.7%,1.55,Betclic,0.096,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,Bouzkova M.,Vekic D.,LONDON,WTA,Grass,R16,Outdoor,500,59.3%,1.56,Betclic,0.060,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,Sierra S.,Boisson L.,S-HERTOGENBOSCH,WTA,Grass,R32,Outdoor,250,68.6%,1.46,Betclic,0.142,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,Potapova A.,Lamens S.,S-HERTOGENBOSCH,WTA,Grass,R32,Outdoor,250,81.0%,1.2,Betclic,0.104,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,Bouzas Maneiro J.,Tomljanovic A.,S-HERTOGENBOSCH,WTA,Grass,R32,Outdoor,250,54.4%,1.8,Winamax,0.008,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,Snigur D.,Udvardy P.,S-HERTOGENBOSCH,WTA,Grass,R16,Outdoor,250,74.1%,1.34,Unibet,0.170,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,Minnen G.,Montgomery R.,S-HERTOGENBOSCH,WTA,Grass,R16,Outdoor,250,60.3%,1.58,Betclic,0.072,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,Hanfmann Y.,Bellucci M.,STUTTGART,ATP,Grass,R16,Outdoor,250,53.5%,1.71,Betclic,-0.033,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,Mpetshi Perricard G.,Onclin G.,STUTTGART,ATP,Grass,R16,Outdoor,250,62.5%,1.53,Betclic,-0.043,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,Bublik A.,Struff J-L.,STUTTGART,ATP,Grass,R16,Outdoor,250,61.2%,1.42,Betclic,-0.204,0.00%,AVIS_LIBRE,EN_ATTENTE
+2026-06-10,Fritz T.,Landaluce M.,STUTTGART,ATP,Grass,R16,Outdoor,250,73.5%,1.4,Unibet,-0.035,0.00%,AVIS_LIBRE,EN_ATTENTE
