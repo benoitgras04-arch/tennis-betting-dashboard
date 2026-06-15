@@ -758,13 +758,16 @@ with tab3:
             gagnes = len(grp[grp['Resultat'] == 'GAGNE'])
             perdus = len(grp[grp['Resultat'] == 'PERDU'])
             joues = gagnes + perdus
-            winrate = (gagnes / joues * 100) if joues > 0 else 0
+            if joues == 0:
+                return None
+            winrate = gagnes / joues * 100
+            # ROI en MISE UNITAIRE (1 par pari) : chaque pari/avis pèse pareil,
+            # indépendamment de la mise réelle (les AVIS_LIBRE sont à 0 %).
             gains = grp.apply(
-                lambda r: r['Mise_num'] * (r['Cote_num'] - 1) if r['Resultat'] == 'GAGNE'
-                          else -r['Mise_num'], axis=1
+                lambda r: (r['Cote_num'] - 1) if r['Resultat'] == 'GAGNE' else -1,
+                axis=1
             ).sum()
-            mises = grp['Mise_num'].sum()
-            roi_pct = (gains / mises * 100) if mises > 0 else 0
+            roi_pct = (gains / joues * 100) if joues > 0 else 0
             return {
                 'Paris': joues,
                 'Winrate_pct': winrate,
