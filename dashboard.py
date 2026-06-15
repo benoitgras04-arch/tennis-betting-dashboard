@@ -302,7 +302,10 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
 
 with tab1:
     # --- BANDEAU SUPÉRIEUR : 3 KPIs principaux ---
-    df_joues_global = df[df['Resultat'].isin(['GAGNE', 'PERDU'])].copy()
+    df_joues_global = df[
+        df['Resultat'].isin(['GAGNE', 'PERDU']) &
+        (df['Mode'] == 'PARI_REEL')
+    ].copy()
     df_joues_global = df_joues_global.sort_values('Date_parsed')
 
     kpis_global = calculer_kpis(df_joues_global)
@@ -526,7 +529,10 @@ with tab2:
         )
 
     # --- FILTRAGE DES DONNÉES ---
-    df_joues_perf = df[df['Resultat'].isin(['GAGNE', 'PERDU'])].copy()
+    df_joues_perf = df[
+        df['Resultat'].isin(['GAGNE', 'PERDU']) &
+        (df['Mode'] == 'PARI_REEL')
+    ].copy()
 
     # Filtrage par mode
     if not inclure_observation:
