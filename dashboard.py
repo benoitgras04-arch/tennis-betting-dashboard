@@ -744,6 +744,7 @@ with tab3:
         df_analyse = df_analyse[df_analyse['Date_parsed'] >= date_lim]
 
     # --- AFFICHAGE DU RÉSUMÉ DE FILTRAGE ---
+    cle_filtres = f"{filtre_circuit}_{filtre_mode}_{filtre_periode}"
     st.caption(f"📌 **{len(df_analyse)} paris** correspondent aux filtres actuels")
     st.markdown("---")
 
@@ -810,7 +811,7 @@ with tab3:
                 fig_surf.update_traces(textposition='outside')
                 fig_surf.update_layout(height=300, showlegend=False, yaxis_title="ROI (%)")
                 fig_surf.add_hline(y=0, line_dash="dot", line_color="gray")
-                st.plotly_chart(fig_surf, use_container_width=True)
+                st.plotly_chart(fig_surf, use_container_width=True, key=f"surf_{cle_filtres}")
 
         st.markdown("---")
 
@@ -856,7 +857,7 @@ with tab3:
                 fig_book.update_traces(textposition='outside')
                 fig_book.update_layout(height=300, showlegend=False, yaxis_title="ROI (%)")
                 fig_book.add_hline(y=0, line_dash="dot", line_color="gray")
-                st.plotly_chart(fig_book, use_container_width=True)
+                st.plotly_chart(fig_book, use_container_width=True, key=f"book_{cle_filtres}")
 
         st.markdown("---")
 
@@ -915,7 +916,7 @@ with tab3:
                 fig_val.update_traces(textposition='outside')
                 fig_val.update_layout(height=300, showlegend=False, yaxis_title="ROI (%)")
                 fig_val.add_hline(y=0, line_dash="dot", line_color="gray")
-                st.plotly_chart(fig_val, use_container_width=True)
+                st.plotly_chart(fig_val, use_container_width=True, key=f"val_{cle_filtres}")
 
         st.markdown("---")
 
@@ -962,7 +963,7 @@ with tab3:
                     xaxis={'categoryorder': 'array', 'categoryarray': ordre_rounds}
                 )
                 fig_round.add_hline(y=0, line_dash="dot", line_color="gray")
-                st.plotly_chart(fig_round, use_container_width=True)
+                st.plotly_chart(fig_round, use_container_width=True, key=f"round_{cle_filtres}")
         else:
             st.info("Pas assez de données par round.")
 
