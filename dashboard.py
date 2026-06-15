@@ -875,19 +875,19 @@ with tab3:
         def bin_value(v):
             v = abs(v)
             if v < 0.10:
-                return "< 0.10"
+                return "< 10%"
             elif v < 0.15:
-                return "0.10–0.15"
+                return "10–15%"
             elif v < 0.20:
-                return "0.15–0.20"
+                return "15–20%"
             elif v < 0.30:
-                return "0.20–0.30"
+                return "20–30%"
             else:
-                return "0.30+"
+                return "30%+"
 
         df_analyse_copy = df_analyse.copy()
         df_analyse_copy['Value_bin'] = df_analyse_copy['Value_num'].apply(bin_value)
-        ordre_bins = ["< 0.10", "0.10–0.15", "0.15–0.20", "0.20–0.30", "0.30+"]
+        ordre_bins = ["< 10%", "10–15%", "15–20%", "20–30%", "30%+"]
 
         stats_value = []
         for bin_name in ordre_bins:
