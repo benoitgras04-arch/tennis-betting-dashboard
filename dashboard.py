@@ -524,12 +524,36 @@ with tab2:
             key="periode_perf"
         )
     with col_f2:
-        inclure_observation = st.checkbox(
-            "Inclure les paris en mode OBSERVATION dans les stats",
-            value=False,
-            help="Si coché, les paris WTA Clay/Grass (observation) seront inclus dans le calcul"
+        mode_perf = st.selectbox(
+            "💰 Mode",
+            ["Paris réels seulement", "Avis seulement", "Tous (réels + avis)"],
+            index=0,
+            key="mode_perf",
+            help="Avis = AVIS_LIBRE + OBSERVATION (pas d'argent réel engagé). "
+                 "Dans ces modes, la courbe est SIMULÉE à mise plate."
         )
 
+    # --- FILTRAGE DES DONNÉES ---
+    df_joues_perf = df[df['Resultat'].isin(['GAGNE', 'PERDU'])].copy()
+
+    MISE_PLATE_PCT = 2.0   # mise plate fictive (%) pour simuler les avis
+    simulation = (mode_perf != "Paris réels seulement")
+
+    if mode_perf == "Paris réels seulement":
+        df_joues_perf = df_joues_perf[df_joues_perf['Mode'] == 'PARI_REEL']
+    elif mode_perf == "Avis seulement":
+        df_joues_perf = df_joues_perf[df_joues_perf['Mode'] != 'PARI_REEL']
+    # "Tous (réels + avis)" : aucun filtre de mode
+
+    # En mode simulé, les avis ont une mise réelle de 0 % : on la remplace par une
+    # mise plate fictive, sinon la courbe de bankroll resterait plate (= illisible).
+    if simulation:
+        df_joues_perf['Mise_num'] = MISE_PLATE_PCT
+        st.warning(
+            f"⚠️ **Courbe SIMULÉE** — ce mode inclut des paris non réels. "
+            f"La bankroll est calculée avec une mise plate fictive de {MISE_PLATE_PCT:.0f} % par pari "
+            f"et ne représente PAS ta performance réelle."
+        )
     # --- FILTRAGE DES DONNÉES ---
     df_joues_perf = df[
         df['Resultat'].isin(['GAGNE', 'PERDU']) &
