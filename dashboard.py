@@ -450,6 +450,7 @@ with tab1:
                         f"📍 {r['Tournoi']} ({r['Surface']}) — Round {r.get('Round', '?')}  \n"
                         f"🎯 Proba IA : **{r['Proba_IA']}** ({niveau})  \n"
                         f"💰 Cote disponible : {r['Cote']} @ {r['Bookmaker']}  \n"
+                        f"📊 Value edge : **{r['Value_num']*100:+.1f}%**  \n"
                         f"{type_avis}"
                     )
                     st.markdown("")
@@ -478,6 +479,7 @@ with tab1:
                         f"📍 {r['Tournoi']} ({r['Surface']}) — Round {r.get('Round', '?')}  \n"
                         f"🎯 Proba IA : **{r['Proba_IA']}** ({niveau})  \n"
                         f"💰 Cote disponible : {r['Cote']} @ {r['Bookmaker']}  \n"
+                        f"📊 Value edge : **{r['Value_num']*100:+.1f}%**  \n"
                         f"{type_avis}"
                     )
                     st.markdown("")
