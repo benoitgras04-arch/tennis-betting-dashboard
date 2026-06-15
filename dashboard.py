@@ -554,15 +554,7 @@ with tab2:
             f"La bankroll est calculée avec une mise plate fictive de {MISE_PLATE_PCT:.0f} % par pari "
             f"et ne représente PAS ta performance réelle."
         )
-    # --- FILTRAGE DES DONNÉES ---
-    df_joues_perf = df[
-        df['Resultat'].isin(['GAGNE', 'PERDU']) &
-        (df['Mode'] == 'PARI_REEL')
-    ].copy()
-
-    # Filtrage par mode
-    if not inclure_observation:
-        df_joues_perf = df_joues_perf[df_joues_perf['Mode'] == 'PARI_REEL']
+    
 
     # Filtrage par période
     if periode != "Tout" and len(df_joues_perf) > 0:
